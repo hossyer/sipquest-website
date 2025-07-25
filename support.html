@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - SipQuest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Content Section */
+        .content-section {
+            background: white;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .section-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .section-content {
+            padding: 40px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .section-header h1 {
+                font-size: 2rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">🍺 SipQuest</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/support">Support</a>
+                <a href="/privacy">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Support Section -->
+    <section class="content-section">
+        <div class="section-header">
+            <h1>📞 Support</h1>
+            <p>Need help? We're here for you!</p>
+        </div>
+        <div class="section-content">
+            <h3>How to Get Help</h3>
+            <p>If you're experiencing issues with SipQuest or have questions about the game, here are the best ways to get support:</p>
+            
+            <h4>📧 Email Support</h4>
+            <p>For technical issues, bug reports, or general questions:</p>
+            <ul>
+                <li><strong>Email:</strong> support@sipquest.app</li>
+                <li><strong>Subject:</strong> SipQuest Support Request</li>
+                <li><strong>Response Time:</strong> Within 24-48 hours</li>
+            </ul>
+            
+            <h4>🐛 Bug Reports</h4>
+            <p>When reporting bugs, please include:</p>
+            <ul>
+                <li>Your device model and iOS version</li>
+                <li>Steps to reproduce the issue</li>
+                <li>Screenshots if possible</li>
+                <li>What you expected to happen vs. what actually happened</li>
+            </ul>
+            
+            <h4>🎮 Common Issues</h4>
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <h5>Can't connect to game?</h5>
+                <p>Make sure all players are on the same WiFi network and try restarting the app.</p>
+                
+                <h5>Game not syncing?</h5>
+                <p>Check your internet connection and ensure the host has a stable connection.</p>
+                
+                <h5>App crashes?</h5>
+                <p>Try force-closing the app and restarting it. If the issue persists, restart your device.</p>
+            </div>
+            
+            <h4>📱 App Store Reviews</h4>
+            <p>If you enjoy SipQuest, please leave a review on the App Store! Your feedback helps us improve the game and helps other players discover it.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/support">Support</a>
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 SipQuest. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
