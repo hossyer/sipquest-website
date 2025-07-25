@@ -90,6 +90,114 @@
         
         .section-content {
             padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .support-content {
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .support-content h3 {
+            color: #2c3e50;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .support-content h4 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .support-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .support-content li {
+            margin-bottom: 8px;
+        }
+        
+        .email-support {
+            background: linear-gradient(135deg, #e8f4fd, #d1ecf1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+        }
+        
+        .bug-report {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #ffc107;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+        }
+        
+        .common-issues {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #6c757d;
+            box-shadow: 0 4px 15px rgba(108, 117, 125, 0.2);
+        }
+        
+        .common-issues h5 {
+            color: #495057;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .common-issues h5:first-child {
+            margin-top: 0;
+        }
+        
+        .google-form-container {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+            border-left: 5px solid #28a745;
+        }
+        
+        .google-form-container h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .google-form-container p {
+            color: #6c757d;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        .form-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .form-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.6);
         }
         
         /* Footer */
@@ -142,8 +250,8 @@
             <div class="logo">🍺 SipQuest</div>
             <div class="nav-links">
                 <a href="/">Home</a>
-                <a href="/support">Support</a>
-                <a href="/privacy">Privacy</a>
+                <a href="/support.html">Support</a>
+                <a href="/privacy.html">Privacy</a>
             </div>
         </div>
     </nav>
@@ -155,40 +263,57 @@
             <p>Need help? We're here for you!</p>
         </div>
         <div class="section-content">
-            <h3>How to Get Help</h3>
-            <p>If you're experiencing issues with SipQuest or have questions about the game, here are the best ways to get support:</p>
-            
-            <h4>📧 Email Support</h4>
-            <p>For technical issues, bug reports, or general questions:</p>
-            <ul>
-                <li><strong>Email:</strong> support@sipquest.app</li>
-                <li><strong>Subject:</strong> SipQuest Support Request</li>
-                <li><strong>Response Time:</strong> Within 24-48 hours</li>
-            </ul>
-            
-            <h4>🐛 Bug Reports</h4>
-            <p>When reporting bugs, please include:</p>
-            <ul>
-                <li>Your device model and iOS version</li>
-                <li>Steps to reproduce the issue</li>
-                <li>Screenshots if possible</li>
-                <li>What you expected to happen vs. what actually happened</li>
-            </ul>
-            
-            <h4>🎮 Common Issues</h4>
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                <h5>Can't connect to game?</h5>
-                <p>Make sure all players are on the same WiFi network and try restarting the app.</p>
+            <div class="support-content">
+                <h3>How to Get Help</h3>
+                <p>If you're experiencing issues with SipQuest or have questions about the game, here are the best ways to get support:</p>
                 
-                <h5>Game not syncing?</h5>
-                <p>Check your internet connection and ensure the host has a stable connection.</p>
+                <div class="email-support">
+                    <h4>📧 Email Support</h4>
+                    <p>For technical issues, bug reports, or general questions:</p>
+                    <ul>
+                        <li><strong>Subject:</strong> SipQuest Support Request</li>
+                        <li><strong>Response Time:</strong> Within 24-48 hours</li>
+                    </ul>
+                </div>
                 
-                <h5>App crashes?</h5>
-                <p>Try force-closing the app and restarting it. If the issue persists, restart your device.</p>
+                <div class="bug-report">
+                    <h4>🐛 Bug Reports</h4>
+                    <p>When reporting bugs, please include:</p>
+                    <ul>
+                        <li>Your device model and iOS version</li>
+                        <li>Steps to reproduce the issue</li>
+                        <li>Screenshots if possible</li>
+                        <li>What you expected to happen vs. what actually happened</li>
+                    </ul>
+                </div>
+                
+                <div class="common-issues">
+                    <h4>🎮 Common Issues</h4>
+                    <h5>Can't connect to game?</h5>
+                    <p>Make sure all players are on the same WiFi network and try restarting the app.</p>
+                    
+                    <h5>Game not syncing?</h5>
+                    <p>Check your internet connection and ensure the host has a stable connection.</p>
+                    
+                    <h5>App crashes?</h5>
+                    <p>Try force-closing the app and restarting it. If the issue persists, restart your device.</p>
+                </div>
+                
+                <h4>📱 App Store Reviews</h4>
+                <p>If you enjoy SipQuest, please leave a review on the App Store! Your feedback helps us improve the game and helps other players discover it.</p>
             </div>
-            
-            <h4>📱 App Store Reviews</h4>
-            <p>If you enjoy SipQuest, please leave a review on the App Store! Your feedback helps us improve the game and helps other players discover it.</p>
+
+            <!-- Google Form Section -->
+            <div class="google-form-container">
+                <h3>📝 Need Help? Contact Us!</h3>
+                <p>Having trouble with SipQuest? Want to report a bug or share feedback? Use our support form to get in touch with our team.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScXkjkwgl17UCxUXJdZDl-EjFU-lCdnYoG8GKdPlf3AqlraWg/viewform?usp=header" class="form-button" target="_blank">
+                    🆘 Get Support
+                </a>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #6c757d;">
+                    We'll respond to your inquiry within 24-48 hours.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -197,8 +322,8 @@
         <div class="container">
             <div class="footer-links">
                 <a href="/">Home</a>
-                <a href="/support">Support</a>
-                <a href="/privacy">Privacy Policy</a>
+                <a href="/support.html">Support</a>
+                <a href="/privacy.html">Privacy Policy</a>
             </div>
             <p>&copy; 2025 SipQuest. All rights reserved.</p>
         </div>
